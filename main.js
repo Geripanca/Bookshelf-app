@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const title = document.getElementById("bookFormTitle").value;
     const author = document.getElementById("bookFormAuthor").value;
-    const year = document.getElementById("bookFormYear").value;
+    const year = Number(document.getElementById("bookFormYear").value); // Konversi ke number
     const isComplete = document.getElementById("bookFormIsComplete").checked;
     const id = editingBookId ? editingBookId : new Date().getTime(); // Gunakan ID yang ada jika sedang mengedit
 
